@@ -3,82 +3,40 @@ extends layout
 block content
   .row.page-header
     .col-lg-12
-      h1 Starcups
+      h1 Top Performers Have a Superpower: Happiness
+      p Research using employee data has uncovered the top five predictors of attrition and offers four actionable steps that managers can take in the short term to reduce attrition.
+
+  .row.text-center
+    .col-xs-12
+      p.large-font
+        | The toll that working through the global pandemic has taken on employees' job satisfaction and emotional well-being has focused business leaders on fostering workforce happiness as never before. While many — if not most — of us are motivated by genuine caring for the people who power our organizations, we also intuitively know that employee happiness should boost job performance. Still, two nagging questions remain: Which comes first, succeeding and then being happy, or being happy and then succeeding? And just how much does initial happiness matter?
+
+      p.large-font
+        | The results of our recent research, published in the Journal of Happiness Studies, have gotten us one big step closer to answering those two questions. For our study, we followed almost 1 million U.S. Army soldiers for nearly five years. We first asked them to rate their well-being — their happiness, if you will — along with their optimism, and then tracked which soldiers later received awards based on their job performance. We collected our data in the midst of the wars in Iraq and Afghanistan, so the stakes were high: Some of those awards were for exemplary assigned job performance, while others were earned for extraordinary performance in heroic actions. Receiving an award in the Army, either for exemplary job performance or for heroism, is a relatively rare event. Of the nearly 1 million soldiers in our sample, only 12% received an award of any type during the five years that we ran the study.
+
   .row
-    .col-xs-12.col-md-9
-      .row
-        .col-xs-12.col-sm-6
-          p.rating
-            span.glyphicon.glyphicon-star
-            span.glyphicon.glyphicon-star
-            span.glyphicon.glyphicon-star
-            span.glyphicon.glyphicon-star-empty
-            span.glyphicon.glyphicon-star-empty
-          p 125 High Street, Reading, RG6 1PS
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Opening hours
-            .panel-body
-              p Monday - Friday : 7:00am - 7:00pm
-              p Saturday : 8:00am - 5:00pm
-              p Sunday : closed
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Facilities
-            .panel-body
-              span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp;Hot drinks
-              | &nbsp;
-              span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp;Food
-              | &nbsp;
-              span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp;Premium wifi
-              | &nbsp;
-        .col-xs-12.col-sm-6.location-map
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Location map
-            .panel-body
-              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
-      .row
-        .col-xs-12
-          .panel.panel-primary.review-panel
-            .panel-heading
-              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
-              h2.panel-title Customer reviews
-            .panel-body.review-container
-              .row
-                .review
-                  .well.well-sm.review-header
-                    span.rating
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                    span.reviewAuthor Simon Holmes
-                    small.reviewTimestamp 16 July 2013
-                  .col-xs-12
-                    p What a great place. I can't say enough good things about it.
-              .row
-                .review
-                  .well.well-sm.review-header
-                    span.rating
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star-empty
-                      span.glyphicon.glyphicon-star-empty
-                    span.reviewAuthor Charlie Chaplin
-                    small.reviewTimestamp 16 June 2013
-                  .col-xs-12
-                    p It was okay. Coffee wasn't great, but the wifi was fast.
-    .col-xs-12.col-md-3
-      p.lead
-        | Starcups is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.
-      p
-        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
+    .col-xs-12
+      .panel.panel-primary.review-panel
+        .panel-heading
+          a.btn.btn-default.pull-right(href='/location/review/new') Add Review
+          h2.panel-title Reviews
+        .panel-body.review-container
+          .row
+            .review
+              .well.well-sm.review-header
+                h3 Rating: ★★★★★ (5/5)
+                span.reviewAuthor Simon Holmes
+                small.reviewTimestamp 16 July 2013
+              .col-xs-12
+                p "What a great place. I can't say enough good things about it."
+
+          .row
+            .review
+              .well.well-sm.review-header
+                h3 Rating: ★★★☆☆ (3/5)
+                span.reviewAuthor Charlie Chaplin
+                small.reviewTimestamp 16 June 2013
+              .col-xs-12
+                p "It was okay. Coffee wasn't great, but the wifi was fast."
+
+  .col-xs-12.col-md-3

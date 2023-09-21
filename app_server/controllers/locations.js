@@ -7,7 +7,7 @@ module.exports.homelist = function (req, res) {
         strapline: 'Find places to work with wifi near you!',
       },
       sidebar:
-        "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake, or a pint? Let Loc8r help you find the place you're looking for.",
+        "Seeking insights and opinions? Browse through Consume Daily's user-driven reviews and discover new perspectives on articles that pique your interest. Explore thought-provoking content, share your own reviews, and let Consume Daily be your guide to the articles you're looking for.",
       locations: [
         {
           name: 'Starcups',
@@ -87,16 +87,16 @@ module.exports.homelist = function (req, res) {
     /* GET 'Location info' page */
     module.exports.locationInfo2 = function(req, res) {
         res.render('location-info2', {
-            title: 'Gismat',
+            title: 'Generative AI at Mastercard: Governance Takes Center Stage',
             pageHeader: {
-                title: 'Gismat'
+                title: 'Generative AI at Mastercard: Governance Takes Center Stage'
             },
             sidebar: {
                 context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
                 callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
             },
             location: {
-                name: 'Gismat',
+                name: 'Generative AI at Mastercard: Governance Takes Center Stage',
                 address: '125 High Street, Reading, RG6 1PS',
                 rating: 3,
                 facilities: ['Hot drinks', 'Food', 'Premium wifi'],
@@ -136,16 +136,16 @@ module.exports.homelist = function (req, res) {
         /* GET 'Location info' page */
   module.exports.locationInfo3 = function(req, res) {
     res.render('location-info3', {
-        title: 'Burger Queen',
+        title: 'Learning From and With AI: Duolingo’s Zan Gilani',
         pageHeader: {
-            title: 'Burger Queen'
+            title: 'Learning From and With AI: Duolingo’s Zan Gilani'
         },
         sidebar: {
             context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Burger Queen',
+            name: 'Learning From and With AI: Duolingo’s Zan Gilani',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
@@ -185,9 +185,9 @@ module.exports.homelist = function (req, res) {
   /* GET 'Add review' page */
   module.exports.addReview = function(req, res) {
     res.render('location-review-form', {
-        title: 'Review Amaravathi on Loc8r',
+        title: 'Review Top Performers Have a Superpower: Happiness on Loc8r',
         pageHeader: {
-            title: 'Review Amaravathi'
+            title: 'Review Top Performers Have a Superpower: Happiness'
         }
     });
   };
@@ -195,9 +195,9 @@ module.exports.homelist = function (req, res) {
   /* GET 'Add review' page */
   module.exports.addReview2 = function(req, res) {
     res.render('location-review-form2', {
-        title: 'Review Gismat on Loc8r',
+        title: 'Review Generative AI at Mastercard: Governance Takes Center Stage on Loc8r',
         pageHeader: {
-            title: 'Review Gismat'
+            title: 'Review Generative AI at Mastercard: Governance Takes Center Stage'
         }
     });
   };
@@ -205,9 +205,9 @@ module.exports.homelist = function (req, res) {
   /* GET 'Add review' page */
   module.exports.addReview3 = function(req, res) {
     res.render('location-review-form3', {
-        title: 'Review Tree Stories Cafe on Loc8r',
+        title: 'Review Learning From and With AI: Duolingo’s Zan Gilani on Loc8r',
         pageHeader: {
-            title: 'Review Tree Stories Cafe'
+            title: 'Review Learning From and With AI: Duolingo’s Zan Gilani'
         }
     });
   };

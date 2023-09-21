@@ -15,4 +15,15 @@ router.get('/location/review/new/3', ctrlLocations.addReview3);
 /* Other pages */
 router.get('/about', ctrlOthers.about);
 
+// Route for the login page
+router.get('/login', (req, res) => {
+    res.render('login', { title: 'Login' });
+  });
+  
+// Route for the registration 
+router.get('/register', (req, res) => {
+    res.render('register', { title: 'Registration' });
+  });
+
+
 module.exports = router;

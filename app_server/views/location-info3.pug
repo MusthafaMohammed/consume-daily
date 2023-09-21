@@ -3,82 +3,42 @@ extends layout
 block content
   .row.page-header
     .col-lg-12
-      h1 Burger Queen
-  .row
-    .col-xs-12.col-md-9
-      .row
-        .col-xs-12.col-sm-6
-          p.rating
-            span.glyphicon.glyphicon-star
-            span.glyphicon.glyphicon-star
-            span.glyphicon.glyphicon-star
-            span.glyphicon.glyphicon-star-empty
-            span.glyphicon.glyphicon-star-empty
-          p 125 High Street, Reading, RG6 1PS
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Opening hours
-            .panel-body
-              p Monday - Friday : 7:00am - 7:00pm
-              p Saturday : 8:00am - 5:00pm
-              p Sunday : closed
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Facilities
-            .panel-body
-              span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp;Hot drinks
-              | &nbsp;
-              span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp;Food
-              | &nbsp;
-              span.label.label-warning
-                span.glyphicon.glyphicon-ok
-                | &nbsp;Premium wifi
-              | &nbsp;
-        .col-xs-12.col-sm-6.location-map
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Location map
-            .panel-body
-              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
-      .row
-        .col-xs-12
-          .panel.panel-primary.review-panel
-            .panel-heading
-              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
-              h2.panel-title Customer reviews
-            .panel-body.review-container
-              .row
-                .review
-                  .well.well-sm.review-header
-                    span.rating
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                    span.reviewAuthor Simon Holmes
-                    small.reviewTimestamp 16 July 2013
-                  .col-xs-12
-                    p What a great place. I can't say enough good things about it.
-              .row
-                .review
-                  .well.well-sm.review-header
-                    span.rating
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star
-                      span.glyphicon.glyphicon-star-empty
-                      span.glyphicon.glyphicon-star-empty
-                    span.reviewAuthor Charlie Chaplin
-                    small.reviewTimestamp 16 June 2013
-                  .col-xs-12
-                    p It was okay. Coffee wasn't great, but the wifi was fast.
-    .col-xs-12.col-md-3
-      p.lead
-        | Starcups is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.
-      p
-        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
+      h1 Learning From and With AI: Duolingo’s Zan Gilani
+      p On the Me, Myself, and AI podcast, Duolingo’s Zan Gilani shares how AI personalizes the language app and motivates users.
+
+  .row.text-center
+    .col-xs-12
+      p.large-font
+        | When Zan Gilani came to the U.S. from Pakistan to complete his undergraduate studies, he chose to study Chinese because it was rumored to be a difficult language. At the time, the tech industry was booming, and he quickly became interested in applying his passion for foreign languages and learning more generally in a technology-rich environment.
+
+      p.large-font
+        | Those interests led Zan to Duolingo, where he has been working in product management for eight years and now oversees the app company’s experiential AI team. What excites him about working at the language-learning app company is his ability to help build solutions that enable personalized education at scale: The app boasts over 16 million daily active users, and AI-driven functionality motivates them through frequent notifications, personalizes learning experiences by adjusting the difficulty of questions in practice sessions, and observes and critiques learners’ performance.
+
+      p.large-font
+        | Zan joins the Me, Myself, and AI podcast to outline the specific ways Duolingo uses AI and machine learning to drive user engagement, and discuss how the technology can be used to support learning more generally.
+        
+    .col-xs-12
+      .panel.panel-primary.review-panel
+        .panel-heading
+          a.btn.btn-default.pull-right(href='/location/review/new') Add Review
+          h2.panel-title Reviews
+        .panel-body.review-container
+          .row
+            .review
+              .well.well-sm.review-header
+                h3 Rating: ★★★★★ (5/5)
+                span.reviewAuthor Simon Holmes
+                small.reviewTimestamp 16 July 2013
+              .col-xs-12
+                p "What a great place. I can't say enough good things about it."
+
+          .row
+            .review
+              .well.well-sm.review-header
+                h3 Rating: ★★★☆☆ (3/5)
+                span.reviewAuthor Charlie Chaplin
+                small.reviewTimestamp 16 June 2013
+              .col-xs-12
+                p "It was okay. Coffee wasn't great, but the wifi was fast."
+
+  .col-xs-12.col-md-3
