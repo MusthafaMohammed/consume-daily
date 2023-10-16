@@ -1,3 +1,5 @@
+const models =  require('../../app_api/models/user')
+
 module.exports.homelist = (req, res) => {
     // Implement logic to render the Features page (e.g., render a Pug template)
     res.render('location-list'); // Replace 'locations-list' with your actual Pug template
@@ -18,10 +20,6 @@ module.exports.homelist = (req, res) => {
     res.render('location-info3'); // Replace 'feature2' with your actual Pug template
   };
   
-  module.exports.blogpost = (req, res) => {
-    
-    res.render('blog_post'); 
-  };
   
  
   
@@ -34,6 +32,45 @@ module.exports.homelist = (req, res) => {
         }
     });
   };
+
+
+
+module.exports.addReview_post = async (req,res)=>{
+  const body = req.body;
+  try {
+    const review = new models.Review({
+      author: body.name,
+      rating: body.rating,
+      reviewText: body.review
+    });
+    review.save();
+    console.log(review);
+    res.redirect('/location');
+  } catch(err) {
+    console.log(err);
+    res.status(500).send('Internal Server Error');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   /* GET 'Add review' page */
   module.exports.addReview2 = function(req, res) {
